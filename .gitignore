@@ -1,0 +1,49 @@
+# Quartus Prime database and temporary files
+db/
+incremental_db/
+greybox_tmp/
+simulation/
+*.qdb
+*.smsg
+*.rpt
+*.summary
+*.eqn
+*.pin
+*.jdi
+
+# Output programming files
+output_files/
+*.sof
+*.pof
+*.jic
+
+# Auto-generated IP and qip cache
+*.qip
+*.sip
+
+# Compilation / log files
+*.log
+*.chg
+*.smsg.gz
+*.xml
+*.htm
+*.html
+
+# Simulation outputs
+*.vcd
+*.wlf
+*.vvp
+
+# Waveform config / GUI files
+*.vwf
+*.vcd
+*.wcfg
+*.wlf
+
+# Windows cruft
+Thumbs.db
+Desktop.ini
+
+# macOS cruft
+.DS_Store
+
