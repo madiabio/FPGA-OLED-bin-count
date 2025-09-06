@@ -1,14 +1,18 @@
 module top (
-	input logic clk,
+	input logic clk_50,
 	input logic rst_n,
 	input logic btn_raw, // async, noisy
-	output logic led_even
+	output logic led_test
 );
 
-
-	// 1) syncrhonise and debounce
-	logic btn_meta, btn_sync, btn_d, btn_rise;
-	always_ff @(posedge clk) begin
-		btn_meta <= btn_raw; // non blocking so RHS evaluated syncrhonously.
-		btn_sync <= btn_meta;
+	// 24-bit counter (~1.5Hz blink)
+	logic [23:0] cnt;
+	
+	always_ff @(posedge clk_50) begin
+		 cnt <= cnt + 1;
+	end
 		
+	assign led_test = cnt[23];  // slow blink
+
+endmodule
+	
