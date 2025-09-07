@@ -10,6 +10,7 @@ simulation/
 *.eqn
 *.pin
 *.jdi
+*.bak
 
 # Output programming files
 output_files/
@@ -49,3 +50,4 @@ Desktop.ini
 
 # Other
 c5_pin_model_dump.txt
+
