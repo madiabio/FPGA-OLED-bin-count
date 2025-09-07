@@ -47,3 +47,5 @@ Desktop.ini
 # macOS cruft
 .DS_Store
 
+# Other
+c5_pin_model_dump.txt
